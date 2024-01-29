@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --Light_Magenta: hsl(293, 100%, 63%);
+    --Light_Violet: hsl(264, 100%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grayish_Violet_app_background: hsl(270, 20%, 96%);
+    --Very_Dark_Desaturated_Violet_submit_button_background: hsl(271, 36%, 24%);
+    --Very_Light_Magenta_radio_button_outline: hsl(289, 100%, 72%);
+}
+
+main{
+    min-height: 100vh;
+    background: var(--White);
+    position: relative;
+}
+
+main p{
+    margin: 0;
+}
+
+/* left bg */
+.backgroundLeft{
+    width: 25rem;
+    height: 90vh;
+    border-radius: 0 0 15rem 15rem;
+    background: linear-gradient(var(--Light_Magenta), var(--Light_Violet));
+    position: absolute;
+    top: 0;
+    left: -8rem;
+}
+
+/* right bg */
+/* .backgroundRight{
+    width: 25rem;
+    height: 90vh;
+    border-radius: 15rem 15rem 0 0;
+    background: var(--Light_Grayish_Violet_app_background);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+
+/* phone */
+.wrapperPhone{
+    position: absolute;
+    top: 10vh;
+    left: 5rem;
+}
+
+.wrapperPhone .phone{
+    width: 17rem;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background: var(--White);
+    box-shadow: 0 0 5rem 1rem hsla(0, 2%, 52%, 0.242);
+}
+
+/* phone background */
+.phone .phoneBg{
+    height: 100%;
+    border-radius: 1.5rem;
+    background: var(--Light_Grayish_Violet_app_background);
+}
+
+/* top of the phone */
+.phone .top{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to bottom right, var(--Light_Violet), var(--Light_Magenta) );
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+    color: var(--White);
+}
+
+/* notch */
+.phone .top .iland{
+    width: 50%;
+    height: 1.2rem;
+    background: var(--White);
+    position: absolute;
+    top: -1px;
+    left: 25%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* profile */
+.phone .top .prflImg{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.phone .topSec .lessOpacity{
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 0.6rem ;
+}
+
+/* text stylng */
+.phone .lght_mgnta{
+    color: var(--Light_Magenta);
+}
+.phone .msg{
+    font-size: 0.5rem ;
+    width: 60%;
+    border-radius: 1rem 1rem 1rem 0.5rem;
+    padding: 0.5rem;
+}
+
+/* message backgraound */
+.phone .gr-bg{
+    background: hsl(256, 22%, 90%);
+    
+}
+.phone .wh-bg{
+    background: var(--White);
+    box-shadow: 0 0.1rem .3rem hsla(240, 1%, 71%, 0.342);
+}
+
+/* second message section, smaple picture */
+.phone .convo2 .smpl{
+    width: 2.5rem;
+    border-radius: 0.5rem;
+}
+.phone .convo2Text .msg{
+    width: 100%;
+    border-radius: 1rem 1rem 0.5rem 1rem;
+}
+
+/* third message gradient background */
+.phone .convo3 .grad-bg{
+    width: 80%;
+    background: linear-gradient(to left, var(--Light_Violet), var(--Light_Magenta));
+}
+
+/* third message gradient background text styling */
+.phone .convo3 .pricing .wh{
+    color: hsl(0, 0%, 100%, 0.7);
+}
+.phone .convo3 .pricing span.bold{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--White);
+}
+
+/* custom checkbox */
+.phone .convo3 .pricing .radio input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* checkbox styling */
+.phone .convo3 .pricing .radio .checkmark{
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    outline: 3px solid var(--Very_Light_Magenta_radio_button_outline);
+    background: transparent;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+}
+
+/* On mouse-hover, add a background color */
+.phone .convo3 .pricing .radio:hover input ~ .checkmark {
+    background-color: var(--Very_Light_Magenta_radio_button_outline);
+}
+
+/* When the checkbox is checked, add background */
+.phone .convo3 .pricing .radio input:checked ~ .checkmark {
+    background-color: var(--Light_Violet);
+    outline: 3px solid var(--Light_Violet);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.phone .convo3 .pricing .radio .checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark/indicator when checked */
+.phone .convo3 .pricing .radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.phone .convo3 .pricing .radio .checkmark::after{
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: var(--Very_Light_Magenta_radio_button_outline);
+    inset: 50%;
+    translate: -50% -50%;
+}
+
+/* message sending section */
+.phone .send{
+    border-radius: 5rem;
+    background: var(--White);
+}
+/* message sending section text styling */
+.phone .send .lessOpacity2{
+    font-size: 0.6rem;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+/* submit button */
+.phone .send .sbmt{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: var(--Very_Dark_Desaturated_Violet_submit_button_background);
+    transition: all .2s;
+}
+
+.phone .send .sbmt button{
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--White);
+    transition: all .2s;
+}
+.phone .send .sbmt:hover{
+    background: var(--White);
+}
+.phone .send .sbmt:hover .icn{
+    color: var(--Very_Dark_Desaturated_Violet_submit_button_background);
+}
+
+/* right section of page */
+
+.wrapperText{
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+.wrapperText h1{
+    font-size: 3rem;
+    color: var(--Very_Dark_Desaturated_Violet_submit_button_background);
+}
+.wrapperText p{
+    color: hsla(0, 0%, 0%, 0.5);
+}
