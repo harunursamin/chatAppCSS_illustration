@@ -1,129 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./responsive.css">
-  <title>Frontend Mentor | Chat app CSS illustration</title>
-</head>
-<body>
-
-  <main class="d-flex">
-    <div class="backgroundLeft">
-    </div>
-    <!-- <div class="backgroundRight">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <title>Frontend Mentor | Chat app CSS illustration</title>
+  </head>
+  <body>
+    <main class="d-flex align-items-center">
+      <div class="backgroundLeft"></div>
+      <!-- <div class="backgroundRight">
     </div> -->
-    <div class="container wrapperPhone">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-5 col-phn mb-5 mb-md-0 ">
-          <div class="phone">
-            <div class="phoneBg pb-2">
-              <div class="top d-flex align-items-end p-1 pb-2">
-                <div class="iland"></div>
-                <div class="topSec d-flex align-items-center">
-                  <span class="mx-2"><i class="fa-solid fa-angle-left"></i></span>
-                  <div class="prfl d-flex align-items-center">
-                    <img src="./images/avatar.jpg" alt="" class="fluid prflImg me-2">
-                    <div class="prflName">
-                      <p>Samuel Green</p>
-                      <p class="lessOpacity">Available to Walk</p>
+      <div class="container wrapperPhone">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 col-md-5 col-phn mb-5 mb-md-0 d-flex justify-content-center"
+          >
+            <div class="phone">
+              <div class="phoneBg pb-2">
+                <div class="top d-flex align-items-end p-1 pb-2">
+                  <div class="iland"></div>
+                  <div class="topSec d-flex align-items-center">
+                    <span class="mx-2"
+                      ><i class="fa-solid fa-angle-left"></i
+                    ></span>
+                    <div class="prfl d-flex align-items-center">
+                      <img
+                        src="./images/avatar.jpg"
+                        alt=""
+                        class="fluid prflImg me-3"
+                      />
+                      <div class="prflName">
+                        <p class="name">Samuel Green</p>
+                        <p class="lessOpacity">Available to Walk</p>
+                      </div>
                     </div>
+                    <span class="ms-5 ps-2"
+                      ><i class="fa-solid fa-ellipsis-vertical"></i
+                    ></span>
                   </div>
-                  <span class="ms-5 ps-2"><i class="fa-solid fa-ellipsis-vertical"></i></span>
                 </div>
-              </div>
-              <div class="convo1 p-2 pb-0 mb-2">
-                <div class="convo1Text">
-                  <p class="lght_mgnta msg gr-bg mb-1">
-                    That sounds great. I’d be happy with that.
-                  </p>
+                <div class="convo1 p-2 pb-0 mb-2">
+                  <div class="convo1Text">
+                    <p class="lght_mgnta msg gr-bg mb-1">
+                      That sounds great. I’d be happy with that.
+                    </p>
+                  </div>
+                  <div class="convo1Text">
+                    <p class="lght_mgnta msg gr-bg">
+                      Could you send over some pictures of your dog, please?
+                    </p>
+                  </div>
                 </div>
-                <div class="convo1Text">
-                  <p class="lght_mgnta msg gr-bg">
-                    Could you send over some pictures of your dog, please?
-                  </p>
+                <div class="convo2 p-2 pb-0 mb-2">
+                  <div class="convo2Pic d-flex flex-row-reverse mb-2">
+                    <img
+                      src="./images/dog-image-1.jpg"
+                      alt=""
+                      class="img-fluid smpl"
+                    />
+                    <img
+                      src="./images/dog-image-2.jpg"
+                      alt=""
+                      class="img-fluid smpl me-1"
+                    />
+                    <img
+                      src="./images/dog-image-3.jpg"
+                      alt=""
+                      class="img-fluid smpl me-1"
+                    />
+                  </div>
+                  <div class="convo2Text ms-5 ps-5">
+                    <p class="dark msg wh-bg mb-1">
+                      Here are a few pictures. She’s a happy girl!
+                    </p>
+                  </div>
+                  <div class="convo2Text ms-5 ps-5">
+                    <p class="dark msg wh-bg">Can you make it?</p>
+                  </div>
                 </div>
-              </div>
-              <div class="convo2 p-2 pb-0 mb-2">
-                <div class="convo2Pic d-flex flex-row-reverse mb-2">
-                  <img src="./images/dog-image-1.jpg" alt="" class="img-fluid smpl">
-                  <img src="./images/dog-image-2.jpg" alt="" class="img-fluid smpl me-1">
-                  <img src="./images/dog-image-3.jpg" alt="" class="img-fluid smpl me-1">
+                <div class="convo3 p-2 pb-0 mb-2">
+                  <div class="convo3Text mb-2">
+                    <p class="lght_mgnta msg gr-bg mb-2">
+                      She looks so happy! The time we discussed works. How long
+                      shall I take her out for?
+                    </p>
+                  </div>
+                  <div class="pricing msg grad-bg mb-1">
+                    <label class="radio d-flex align-items-center">
+                      <input type="checkbox" />
+                      <span class="checkmark me-2"></span>
+                      <span class="wh"> 30 min walk </span>
+                      <span class="bold ms-5 ps-3"> $29 </span>
+                    </label>
+                  </div>
+                  <div class="pricing msg grad-bg mb-2">
+                    <label class="radio d-flex align-items-center">
+                      <input type="checkbox" />
+                      <span class="checkmark me-2"></span>
+                      <span class="wh"> 1 hour walk </span>
+                      <span class="bold ms-5 ps-3"> $49 </span>
+                    </label>
+                  </div>
                 </div>
-                <div class="convo2Text ms-5 ps-5">
-                  <p class="dark msg wh-bg mb-1">
-                    Here are a few pictures. She’s a happy girl!
-                  </p>
-                </div>
-                <div class="convo2Text ms-5 ps-5">
-                  <p class="dark msg wh-bg">
-                    Can you make it?
-                  </p>
-                </div>
-              </div>
-              <div class="convo3 p-2 pb-0 mb-2">
-                <div class="convo3Text mb-2">
-                  <p class="lght_mgnta msg gr-bg mb-2">
-                    She looks so happy! The time we discussed works. How long shall I take her out for?
-                  </p>
-                </div>
-                <div class="pricing msg grad-bg mb-1">
-                  <label class="radio d-flex align-items-center">
-                    <input type="checkbox">
-                    <span class="checkmark me-2"></span>
-                    <span class="wh">
-                      30 min walk
-                    </span>
-                    <span class="bold ms-5 ps-3">
-                      $29
-                    </span>
-                  </label>
-                </div>
-                <div class="pricing msg grad-bg mb-2">
-                  <label class="radio d-flex align-items-center">
-                    <input type="checkbox">
-                    <span class="checkmark me-2"></span>
-                    <span class="wh">
-                      1 hour walk
-                    </span>
-                    <span class="bold ms-5 ps-3">
-                      $49
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <div class="send d-flex align-items-center justify-content-between p-1 ps-3 mx-2">
-                <p class="lessOpacity2">
-                  Type a message…
-                </p>
-                <div class="sbmt d-flex align-items-center justify-content-center">
-                  <button><i class="fa-solid fa-angle-right icn"></i></button>
+                <div
+                  class="send d-flex align-items-center justify-content-between p-1 ps-3 mx-2"
+                >
+                  <p class="lessOpacity2">Type a message…</p>
+                  <div
+                    class="sbmt d-flex align-items-center justify-content-center"
+                  >
+                    <button><i class="fa-solid fa-angle-right icn"></i></button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-7 col-lg-5 textWrap">
-          <div class="wrapperText ">
-            <h1 class="mb-5">Simple booking</h1>
-            <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-              discuss arrangements and make bookings. Once the walk has been completed you can rate 
-              your walker and book again all through the chat.
-            </p>
+          <div class="col-12 col-md-7 col-lg-5 textWrap">
+            <div class="wrapperText">
+              <h1 class="mb-5">Simple booking</h1>
+              <p>
+                Stay in touch with our dog walkers through the chat interface.
+                This makes it easy to discuss arrangements and make bookings.
+                Once the walk has been completed you can rate your walker and
+                book again all through the chat.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-  </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
